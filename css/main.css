@@ -1,0 +1,117 @@
+h1 {
+    font-family: 'Times New Roman', Georgia, serif;
+    text-align: center
+}
+nav {
+    width: auto;
+    max-width: 600px;
+    background-color: green;
+    margin: 16px auto;
+}
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block; /* can be inline, block or inlineblock*/
+}
+nav ul li a {
+    text-decoration: none; /* will remove underline from this link*/
+    display: inline-block;
+    padding: 8px 26px; /* 16 for top and bottom and 32 for left right */
+}
+nav ul li a:hover, nav ul li a:focus {
+    background-color: rgb( 0,255,0);
+    color: #ff00ff /* fff implies ffffff */
+}
+nav ul li a:active {
+    background-color: rgb( 255,0,255);
+    color: #00ff00 /* fff implies ffffff */
+}
+
+.current-link {
+    background-color: rgb( 255,255,0,0.7);
+    color: #ff00ff /* fff implies ffffff */
+}
+
+.reduce-padding {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+article {
+    max-width: 600px; /* width: 600px; */
+    margin-left: auto; /* Margin left and right will centre a block level element! */
+    margin-right: auto;
+    padding: 64px;  /* adds padding*/
+}
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb( 33,33,33 ); /*f There are a few ways to do colour... */
+    background-color: #00ffff; /* short hand with #eee */
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+  .screen-reader-text:focus { /* this ":" means pseudo selectors:
+                                a:hover very common
+                                a:visited ?purple if visited and blue if not
+                                a:active state of element
+                                */
+
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 15px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+  }
+
+  .hide-me {
+      list-style: none;
+      height: 0;    
+  }
+
+  .overflow-hidden {
+      overflow: hidden;
+      height: 35px;
+  }
+  .overflow-visible {
+    overflow: visible;
+    height: 35px;
+
+  }
+  .overflow-scroll {
+    overflow: scroll;
+    height: 75px;
+  }  
+  .overflow-auto {
+    overflow: auto;
+    height: 75px;
+
+  }
