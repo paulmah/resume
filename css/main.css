@@ -5,7 +5,8 @@ h1 {
 nav {
     width: auto;
     max-width: 600px;
-    background-color: green;
+    background-color: rgb(00,00,255);
+    color: #ff00ff;
     margin: 16px auto;
 }
 nav ul {
@@ -19,6 +20,7 @@ nav ul li a {
     text-decoration: none; /* will remove underline from this link*/
     display: inline-block;
     padding: 8px 26px; /* 16 for top and bottom and 32 for left right */
+    color: #00ff00
 }
 nav ul li a:hover, nav ul li a:focus {
     background-color: rgb( 0,255,0);
@@ -34,9 +36,9 @@ nav ul li a:active {
     color: #ff00ff /* fff implies ffffff */
 }
 
-.reduce-padding {
+#reduce-padding {
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 
@@ -45,14 +47,14 @@ article {
     max-width: 600px; /* width: 600px; */
     margin-left: auto; /* Margin left and right will centre a block level element! */
     margin-right: auto;
-    padding: 64px;  /* adds padding*/
+    padding: 0px;  /* adds padding*/
 }
 p {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: rgb( 33,33,33 ); /*f There are a few ways to do colour... */
-    background-color: #00ffff; /* short hand with #eee */
+    background-color: #ffff0f; /* short hand with #eee */
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 }
 
@@ -79,7 +81,7 @@ p {
     background-color: #eee;
     clip: auto !important;
     clip-path: none;
-    color: #444;
+    color: #444#;
     display: block;
     font-size: 1em;
     height: auto;
