@@ -2,6 +2,12 @@ h1 {
     font-family: 'Times New Roman', Georgia, serif;
     text-align: center
 }
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
 nav {
     width: auto;
     max-width: 600px;
@@ -30,6 +36,12 @@ nav ul li a:active {
     background-color: rgb( 255,0,255);
     color: #00ff00 /* fff implies ffffff */
 }
+nav.topnav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
 
 .current-link {
     background-color: rgb( 255,255,0,0.7);
@@ -37,8 +49,14 @@ nav ul li a:active {
 }
 
 #reduce-padding {
-    margin: 0;
+    display: block;
+    margin: 0px;
     padding: 0px;
+    border-radius: 160px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 body {
     /* background-image: https://unsplash.com/photos/-IQGXSMLYJc 
@@ -80,7 +98,7 @@ p {
     font-size: 15px;
     line-height: 1.5;
     color: rgb( 33,33,33 ); /*f There are a few ways to do colour... */
-    background-color: #ffff0f; /* short hand with #eee */
+    background-color: none; /* short hand with #eee */
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 }
 
@@ -152,11 +170,12 @@ p {
 #social-media-links > li {  /* using '>', only direct child affected (not grandchild). the li must be directly inside the element with the "social-media-links" id in this case */
     display: inline-block;
     margin: 8px;
+    font-size: 32px;
 
 }
 #social-media-links .fab {
-    color: rgba( 50, 50, 50, 1);
-    font-size: 32px;
+    color: rgba( 10, 150, 150, 1);
+    font-size: 64px;
 }
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
