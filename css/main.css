@@ -1,6 +1,6 @@
 h1 {
     font-family: 'Times New Roman', Georgia, serif;
-    text-align: center
+    text-align: center;
 }
 h2 {
     margin-left: auto;
@@ -161,11 +161,9 @@ p {
     height: 75px;
 
   }
-  #social-media-links {
+#social-media-links {
     list-style: none;
     text-align: center;
-    height: 20px;
-    width: 20px;
 }
 #social-media-links > li {  /* using '>', only direct child affected (not grandchild). the li must be directly inside the element with the "social-media-links" id in this case */
     display: inline-block;
@@ -176,11 +174,13 @@ p {
 #social-media-links .fab {
     color: rgba( 10, 150, 150, 1);
     font-size: 64px;
+    height: 8px;
+    width: 8px;
 }
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
 #social-media-links a:active .fab  /* psuedo-selector with nesting. */
 {
     color: rgba( 255, 0, 0, 0.75 ); /* rgba - the "a" stands for alpha channel.   alpha channel: 1 = opaque; 0 = transparent.  can use values in between like 0.5 */
-    /* color: rgba( 50, 50, 50, 0.5 ); /* rgba - the "a" stands for alpha channel.   alpha channel: 1 = opaque; 0 = transparent.  can use values in between like 0.5 */
+/* color: rgba( 50, 50, 50, 0.5 ); /* rgba - the "a" stands for alpha channel.   alpha channel: 1 = opaque; 0 = transparent.  can use values in between like 0.5 */
 }
